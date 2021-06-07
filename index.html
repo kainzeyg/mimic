@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body class="bg">
+  <!-- этот тотальный костыльный пиздец был собран за пол дня на коленке. стыдно шопздц :'( -->
+  <div class="preloader hided">
+    <img src="./img/preloader.gif" alt="">
+  </div>
+  
+  <div id="first" class="container hided">
+    <!-- logo -->
+    <div class="row">
+      <div class="logo">
+        <img src="img/logo_horizontal.png" alt="logo">
+      </div>
+    </div>
+    <!-- logo end -->
+    <div class="row">
+      <!-- login group -->
+      <div class="login__group">
+        <div class="col-sm-12">
+          <button id="login-entry">
+            Вход по логину и паролю
+            <img src="img/ic_login_by_login_pass.png" alt="">
+          </button>
+        </div>
+        <div class="col-sm-12">
+          <button id="qr-entry">
+            Вход по QR-коду
+            <img src="img/ic_login_by_qr_code.png" alt="">
+          </button>
+        </div>
+      </div>
+      <!-- login group -->
+      <!-- login form -->
+      <div class="row">
+        <div class="login__group_form hided">
+          <div class="login__form">
+            <div class="col-sm-12">
+              <span>Логин</span>
+            </div>
+            <div class="col-sm-12">
+              <input id="entryLogin" type="text">
+            </div>
+            <div class="col-sm-12">
+             <span>Пароль</span>
+            </div>
+            <div class="col-sm-12 mb-3">
+              <input id="entryPass" type="password">
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button id="entryBtn" class="">Войти</button>
+              </div>
+              <div class="col-6">
+                <button id="backBtn" class="">Назад</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login form end -->
+      <div class="row">
+          <div class="login__group_form_qr hided">
+            <div class="col-sm-12">
+              <div class="login__form">
+                <p class="warning">Отключено для stage-среды.</p>
+                <button id="qrBackBtn" class="">Назад</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="sms-form hided">
+          <div class="col-12">
+            <p class="notification">Мы отправили SMS <br> с проверочным кодом на Ваш номер</p>
+          </div>
+          <div class="col-12">
+            <input class="sms-check" type="password" placeholder="Код проверки" maxlength="4">
+          </div>
+          <div class="col-12">
+            <a href="#">Не получили код?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- SECOND SCREEN -->
+
+  <div id="second" class="container hided">
+    <div class="row">
+      <div class="second-logo">
+        <img src="img/logo_horizontal.png" alt="logo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="top-navbar">
+          <button id="exitBtn">
+            <img src="./img/ic_logout.png" alt="">
+          </button>
+          <button id="tutorBtn">
+            <img src="./img/ic_tutoreal.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="services__wrapper">
+        <button id="newsBtn" class="services__item">
+          <img src="./img/serv-item/ic_menu_news.png" class="services-icon">
+          <p class="desc">Новости</p>
+        </button>
+        <button id="restBtn" class="services__item">
+          <img src="./img/serv-item/ic_menu_vacation_rest.png" class="services-icon">
+          <p class="desc">Остаток отпуска</p>
+        </button>
+        <button id="scheduleBtn" class="services__item">
+          <img src="./img/serv-item/ic_menu_work_schedule.png" class="services-icon">
+          <p class="desc">График работы</p>
+        </button>
+        <button id="dmcBtn" class="services__item">
+          <img src="./img/serv-item/ic_menu_dmc.png" class="services-icon">
+          <p class="desc">ДМС</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- THIRD SCREEN -->
+  <div id="third" class="container hided">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div class="top-navbar_third">
+          <button id="backBtnTS">&lsaquo; Назад</button>
+          <p>Обучение</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutor__item">
+      <button data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false">
+        Новости 1
+      </button>
+      <div class="collapse" id="collapseNews">
+        <img src="./img/tutorial/tutorial_news_1.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseNews2" aria-expanded="false">
+        Новости 2
+      </button>
+      <div class="collapse" id="collapseNews2">
+        <img src="./img/tutorial/tutorial_news_2.webp" alt="">
+      </div>
+
+      <button data-bs-toggle="collapse" data-bs-target="#collapseRest" aria-expanded="false">
+        Остаток отпуска 1
+      </button>
+      <div class="collapse" id="collapseRest">
+        <img src="./img/tutorial/tutorial_vacation_rest_1.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseRest2" aria-expanded="false">
+        Остаток отпуска 2
+      </button>
+      <div class="collapse" id="collapseRest2">
+        <img src="./img/tutorial/tutorial_vacation_rest_2.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseRest3" aria-expanded="false">
+        Остаток отпуска 3
+      </button>
+      <div class="collapse" id="collapseRest3">
+        <img src="./img/tutorial/tutorial_vacation_rest_3.webp" alt="">
+      </div>
+
+      <button data-bs-toggle="collapse" data-bs-target="#collapseSchedule" aria-expanded="false">
+        График работы 1
+      </button>
+      <div class="collapse" id="collapseSchedule">
+        <img src="./img/tutorial/tutorial_work_schedule_1.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseSchedule2" aria-expanded="false">
+        График работы 2
+      </button>
+      <div class="collapse" id="collapseSchedule2">
+        <img src="./img/tutorial/tutorial_work_schedule_2.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseSchedule3" aria-expanded="false">
+        График работы 3
+      </button>
+      <div class="collapse" id="collapseSchedule3">
+        <img src="./img/tutorial/tutorial_work_schedule_3.webp" alt="">
+      </div>
+
+      <button data-bs-toggle="collapse" data-bs-target="#collapseDms" aria-expanded="false">
+        ДМС 1
+      </button>
+      <div class="collapse" id="collapseDms">
+        <img src="./img/tutorial/tutorial_mia_1.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseDms2" aria-expanded="false">
+        ДМС 2
+      </button>
+      <div class="collapse" id="collapseDms2">
+        <img src="./img/tutorial/tutorial_mia_2.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseDms3" aria-expanded="false">
+        ДМС 3
+      </button>
+      <div class="collapse" id="collapseDms3">
+        <img src="./img/tutorial/tutorial_mia_3.webp" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- FOUR -->
+  <div id="dms-screen" class="container">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div class="top-navbar_dms">
+          <button id="backBtnDms">&lsaquo; Назад</button>
+          <p>Программа ДМС</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="dms_title">Менеджер страховой компании</p>
+      </div>
+      <div class="col-12">
+        <p class="dms_info">Андреев Артем Валериевич</p>
+      </div>
+      <div class="col-12">
+        <p class="dms_info">
+          +7 (999) 838-42-74
+          <a href="tel:+79998384274">
+            <img src="./img/ic_mia_phone.png" alt="">
+          </a>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="dms_info">
+          andartemv@gmail.com
+          <a href="mailto:andartemv@gmail.com">
+            <img src="./img/ic_mia_email.png" alt="">
+          </a>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="dms_title">Период действия программы</p>
+      </div>
+      <div class="col-12">
+        <p class="dms_period">22.04.2021 - 30.04.2022</p>
+      </div>
+      <div class="col-12">
+        <a href="./img/info.pdf" class="dms-description-btn">Описание программы</a>
+      </div>
+    </div>
+
+
+  
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="core.js"></script>
+</body>
+</html>
