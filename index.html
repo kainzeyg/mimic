@@ -17,7 +17,7 @@
     <img src="./img/preloader.gif" alt="">
   </div>
   
-  <div id="first" class="container">
+  <div id="first" class="container hided">
     <!-- logo -->
     <div class="row">
       <div class="logo">
@@ -136,6 +136,13 @@
           <img src="./img/serv-item/ic_menu_dmc.png" class="services-icon">
           <p class="desc">ДМС</p>
         </button>
+        <button id="menuBtn" class="services__item">
+          <img src="./img/serv-item/ic_menu_dining_menu.png" class="services-icon">
+          <p class="desc">Меню столовой</p>
+        </button>
+        <button id="noBtn" class="services__item2">
+         
+        </button>
       </div>
     </div>
   </div>
@@ -221,10 +228,35 @@
       <div class="collapse" id="collapseDms3">
         <img src="./img/tutorial/tutorial_mia_3.webp" alt="">
       </div>
+
+      <button data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false">
+        Меню столовой 1
+      </button>
+      <div class="collapse" id="collapseMenu">
+        <img src="./img/tutorial/tutorial_dining_menu_1.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseMenu2" aria-expanded="false">
+        Меню столовой 2
+      </button>
+      <div class="collapse" id="collapseMenu2">
+        <img src="./img/tutorial/tutorial_dining_menu_2.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseMenu3" aria-expanded="false">
+        Меню столовой 3
+      </button>
+      <div class="collapse" id="collapseMenu3">
+        <img src="./img/tutorial/tutorial_dining_menu_3.webp" alt="">
+      </div>
+      <button data-bs-toggle="collapse" data-bs-target="#collapseMenu4" aria-expanded="false">
+        Меню столовой 4
+      </button>
+      <div class="collapse" id="collapseMenu4">
+        <img src="./img/tutorial/tutorial_dining_menu_4.webp" alt="">
+      </div>
     </div>
   </div>
 
-  <!-- FOUR-dms-screen -->
+<!-- FOUR-dms-screen -->
   <div id="dms-screen" class="container hided">
     <div class="row">
       <div class="col-12 p-0">
@@ -269,7 +301,7 @@
     </div>  
   </div>
 
-  <!-- FIVE-rest-screen -->
+<!-- FIVE-rest-screen -->
   <div id="rest-screen" class="container hided">
     <div class="row">
       <div class="col-12 p-0">
@@ -341,7 +373,7 @@
     </div>  
   </div>
 
-  <!-- SIX-news-screen -->
+<!-- SIX-news-screen -->
   <div id="news-screen" class="container hided">
     <div class="row">
       <div class="col-12 p-0">
@@ -650,7 +682,7 @@
 
   </div>
 
-  <!-- EIGHT-calendar-screen -->
+<!-- EIGHT-calendar-screen -->
   <div id="tableBlad" class="container hided">
     <div class="row">
       <div class="col-12 p-0">
@@ -707,9 +739,200 @@
       </div>
     </div>
   </div>
-  
-  
   <!-- ТРУБА Я ШАТАЛ ЭТАТ ТАБЛИЦ !! -->
+
+  
+<!-- NINE-menu-screen -->
+  <div id="menu-screen" class="container">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div class="top-navbar_menu">
+          <button id="backBtnMenu">&lsaquo; Назад</button>
+          <p>Меню столовой</p>
+        </div>
+        <div class="top-navbar_menu2">
+          <button id="Simple">Общее</button>
+          <!--<button id="LPP">ЛПП</button>
+          <button id="Ucenen">Акции</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="news_list">
+        <a data-bs-toggle="collapse" data-bs-target="#news_1" aria-expanded="false">
+          <div class="news_item">
+            <div class="row">
+              <div class="col-4 m-0">
+                <div class="news_image">
+                <img src="./img/foodimg/6d7cd.jpg" alt="">
+              </div>
+              </div>
+              <div class="col-8 m-0 p-0">
+                <p class="news_title">Гренки солдатские с чесноком и зеленью</p>
+              </div>
+              <div class="col-12">
+                <p class="rest_info">
+                  Рецепт...<span id="rest-date2"></span> 
+                  <span class="rest_number">35.00&#8381;</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="news_text collapse" id="news_1">
+              Хлеб - 500 г <br>
+              Масло подсолнечное - 60 г<br>
+              Чеснок - 1 головка<br>
+              Зелень - 30 г<br>
+              Перец - 0,25 ч. ложки <br>
+              Соль - 0,5 ч. ложки <br>
+              Вода - 50 мл              
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-bs-toggle="collapse" data-bs-target="#news_2" aria-expanded="false">
+          <div class="news_item">
+            <div class="row">
+              <div class="col-4 m-0">
+                <div class="news_image">
+                <img src="./img/foodimg/16108.jpg" alt="">
+              </div>
+              </div>
+              <div class="col-8 m-0 p-0">
+                <p class="news_title">Уха по княжески</p>
+              </div>
+              <div class="col-12">
+                <p class="rest_info">
+                  Рецепт...<span id="rest-date2"></span> 
+                  <span class="rest_number">85.00&#8381;</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="news_text collapse" id="news_2">
+              Карась - 600 г <br>
+              Картофель - 400 г <br>
+              Лук репчатый (небольшого размера) - 1 шт. <br>
+              Морковь (небольшого размера) - 1 шт. <br>
+              Масло подсолнечное - 3 ст. ложки <br>
+              Лавровый лист - 1 шт. <br>
+              Зелень укропа - 5 г <br>
+              Зелень петрушки - 5 г <br>
+              Соль <br>
+              Перец чёрный молотый  <br>
+              Вода - 1,5 л         
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-bs-toggle="collapse" data-bs-target="#news_3" aria-expanded="false">
+          <div class="news_item">
+            <div class="row">
+              <div class="col-4 m-0">
+                <div class="news_image">
+                <img src="./img/foodimg/12345.jpg" alt="">
+              </div>
+              </div>
+              <div class="col-8 m-0 p-0">
+                <p class="news_title">Бифштекс с яйцом</p>
+              </div>
+              <div class="col-12">
+                <p class="rest_info">
+                  Рецепт...<span id="rest-date2"></span> 
+                  <span class="rest_number">70.00&#8381;</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="news_text collapse" id="news_3">
+              Говяжий фарш – 1 кг <br>
+              Лук репчатый – 1 шт. <br>
+              Яйцо куриное – 1 шт. <br>
+              Молоко – 150 мл <br>
+              Соль - 2 ч. ложки <br>
+              Перец - 1 щепотка <br>
+              Мука - 3-4 ст. ложки <br>
+              Масло растительное - 30 г       
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-bs-toggle="collapse" data-bs-target="#news_4" aria-expanded="false">
+          <div class="news_item">
+            <div class="row">
+              <div class="col-4 m-0">
+                <div class="news_image">
+                <img src="./img/foodimg/333cd.jpg" alt="">
+              </div>
+              </div>
+              <div class="col-8 m-0 p-0">
+                <p class="news_title">Рататуй (овощное рагу)</p>
+              </div>
+              <div class="col-12">
+                <p class="rest_info">
+                  Рецепт...<span id="rest-date2"></span> 
+                  <span class="rest_number">110.00&#8381;</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="news_text collapse" id="news_4">
+              Для соуса пепперад:<br>
+              Перец болгарский - 2 шт.<br>
+              Помидоры - 2 шт.<br>
+              Лук репчатый - 1 шт.<br>
+              Чеснок - 2 зубчика<br>
+              Тимьян<br>
+              Лавровый лист<br>
+              Базилик<br>
+              Соль - по вкусу<br>
+              Перец - по вкусу<br>
+              Масло оливковое - 2 ст. л. (для жарки)<br>
+              *<br>
+              Для рататуя:<br>
+              Цуккини - 1 шт.<br>
+              Кабачок - 1 шт.<br>
+              Баклажан - 1 шт.<br>
+              Помидор - 3-4 шт.<br>
+              Масло оливковое - 2 ст. л.<br>
+              Чеснок<br>
+              Тимьян      <br>
+              Соль<br>
+              Перец
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-bs-toggle="collapse" data-bs-target="#news_5" aria-expanded="false">
+          <div class="news_item">
+            <div class="row">
+              <div class="col-4 m-0">
+                <div class="news_image">
+                <img src="./img/foodimg/1324.jpg" alt="">
+              </div>
+              </div>
+              <div class="col-8 m-0 p-0">
+                <p class="news_title">Напиток</p>
+              </div>
+              <div class="col-12">
+                <p class="rest_info">
+                  Рецепт...<span id="rest-date2"></span> 
+                  <span class="rest_number">30.00&#8381;</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="news_text collapse" id="news_5">
+              Сок пакетированный<br>
+              Компот домашний
+                  
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="core.js"></script>
